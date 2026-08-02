@@ -1,6 +1,6 @@
 import './page5.css';
 import * as THREE from 'three';
-import { scroll, animate, inView, stagger } from 'framer-motion';
+import { scroll, animate, inView, stagger } from 'framer-motion/dom';
 
 // ── Unsplash imagery (gym / fire-lit strength training aesthetic) ──
 const holdImg = 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80'; // athlete holding weight, tension pose
