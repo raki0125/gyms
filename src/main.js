@@ -44,6 +44,18 @@ function renderApp(page = getPageFromURL()) {
   const existingNav = document.querySelector('.global-page-nav');
   if (existingNav) existingNav.remove();
 
+  // Update Page Title for SEO
+  const titles = {
+    page1: 'Tech Lashra - Nexium Fitness',
+    page2: 'Tech Lashra - FitFlow Studio',
+    page3: 'Tech Lashra - Elite Gym & Yoga',
+    page4: 'Tech Lashra - Active Performance',
+    page5: 'Tech Lashra - Power House',
+    page6: 'Tech Lashra - Apex Laboratory',
+    page7: 'Tech Lashra - Fitness Honor'
+  };
+  document.title = titles[page] || 'Tech Lashra';
+
   // Render active page component inside #app
   if (page === 'page1')      renderPage1(app);
   else if (page === 'page2') renderPage2(app);

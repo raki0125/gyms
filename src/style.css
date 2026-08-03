@@ -379,7 +379,6 @@ body {
 }
 .p1-nav-cta:hover { background: #fff; transform: translateY(-1px); }
 
-/* ── Hero Section ── */
 .p1-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -388,6 +387,7 @@ body {
   padding: 60px 48px;
   position: relative;
   overflow: hidden;
+  gap: 40px;
 }
 
 .p1-hero::before {
@@ -844,6 +844,7 @@ body {
   min-height: calc(100vh - 72px);
   padding: 60px 56px;
   overflow: hidden;
+  gap: 40px;
 }
 
 .p2-hero-text {
