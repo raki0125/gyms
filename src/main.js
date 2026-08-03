@@ -7,11 +7,13 @@ import { renderPage5 } from './pages/page 5/page5.js';
 import { renderPage6 } from './pages/page 6/page 6.js';
 import { renderPage7 } from './pages/page 7/page 7.js';
 import { renderPage8 } from './pages/page 8/page 8.js';
+import { renderPage9 } from './pages/page 9/page 9.js';
 
 const app = document.querySelector('#app');
 
 function getPageFromURL() {
   const path = window.location.pathname.toLowerCase();
+  if (path.includes('page/9') || path.includes('page9')) return 'page9';
   if (path.includes('page/8') || path.includes('page8')) return 'page8';
   if (path.includes('page/7') || path.includes('page7')) return 'page7';
   if (path.includes('page/6') || path.includes('page6')) return 'page6';
@@ -31,7 +33,8 @@ function navigateTo(page, updateHistory = true) {
     page5: '/page/5',
     page6: '/page/6',
     page7: '/page/7',
-    page8: '/page/8'
+    page8: '/page/8',
+    page9: '/page/9'
   };
   const targetPath = paths[page] || '/page/1';
 
@@ -56,7 +59,8 @@ function renderApp(page = getPageFromURL()) {
     page5: 'Tech Lashra - Power House',
     page6: 'Tech Lashra - Apex Laboratory',
     page7: 'Tech Lashra - Fitness Honor',
-    page8: 'Tech Lashra - Fitness 1Plus'
+    page8: 'Tech Lashra - Fitness 1Plus',
+    page9: 'Tech Lashra - Sport Life Fitness Club'
   };
   document.title = titles[page] || 'Tech Lashra';
 
@@ -69,6 +73,7 @@ function renderApp(page = getPageFromURL()) {
   else if (page === 'page6') renderPage6(app);
   else if (page === 'page7') renderPage7(app);
   else if (page === 'page8') renderPage8(app);
+  else if (page === 'page9') renderPage9(app);
 }
 
 // Handle browser Back / Forward buttons
