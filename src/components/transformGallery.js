@@ -20,22 +20,6 @@ const transformations = [
     weeks: '16',
     quote: '"The custom Indian diet plan was a complete game changer for me!"',
     featured: true
-  },
-  {
-    img: t3,
-    name: 'Rohit K., 25',
-    tags: ['Muscle Gain', '6 Months'],
-    kgLost: '18 kg',
-    weeks: '24',
-    quote: '"Coaches corrected my form and I gained 8 kg of lean muscle."'
-  },
-  {
-    img: t4,
-    name: 'Sneha R., 34',
-    tags: ['Body Recomp', '3 Months'],
-    kgLost: '10 kg',
-    weeks: '12',
-    quote: '"Post-pregnancy comeback. FitFlow made it possible from home!"'
   }
 ];
 

@@ -1510,3 +1510,131 @@ body {
   .gallery-header { flex-direction: column; align-items: flex-start; }
 }
 
+/* ── Page 7 Membership Card 3D Flip ── */
+.p7-price-card-flip-wrap {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  perspective: 1200px;
+  transition: transform 0.3s ease;
+}
+.p7-price-card-flip-wrap:hover {
+  transform: translateY(-6px);
+}
+.p7-price-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-style: preserve-3d;
+}
+.p7-price-card-flip-wrap.flipped .p7-price-card-inner {
+  transform: rotateY(180deg);
+}
+
+.p7-price-card-front, .p7-price-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.p7-price-card-front {
+  background: #0d1117;
+  border: 1px solid rgba(255,255,255,0.07);
+  justify-content: space-between;
+}
+.p7-price-card-front.featured {
+  border-color: rgba(56,189,248,0.5);
+  background: linear-gradient(135deg, #0f1f35 0%, #0d1117 100%);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.12);
+}
+
+.p7-price-card-back {
+  background: #0d1117;
+  border: 1px solid rgba(56,189,248,0.3);
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+.p7-price-card-back.featured {
+  border-color: rgba(56,189,248,0.5);
+  background: linear-gradient(135deg, #0f1f35 0%, #0d1117 100%);
+  box-shadow: 0 15px 40px rgba(56,189,248,0.12);
+}
+
+.p7-form-back-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.65);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+.p7-form-back-btn:hover {
+  color: #38bdf8;
+}
+
+.p7-form-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.p7-join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+.p7-form-group {
+  width: 100%;
+}
+.p7-form-input {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+.p7-form-input:focus {
+  border-color: #38bdf8;
+  background: rgba(255, 255, 255, 0.1);
+}
+.p7-form-submit-btn {
+  background: #38bdf8;
+  color: #030712;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+.p7-form-submit-btn:hover {
+  background: #fff;
+}
+
