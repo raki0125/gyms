@@ -26,7 +26,7 @@ export function renderPage9(container) {
 
       <!-- STICKY NAVBAR -->
       <nav class="p1-nav">
-        <div class="p1-logo">SPORT LIFE</div>
+        <div class="p1-logo">SPORT LIFE FITNESS CLUB</div>
         <div class="p1-nav-links">
           <a href="#p1-about">About</a>
           <a href="#p1-membership">Memberships</a>
@@ -290,7 +290,7 @@ export function renderPage9(container) {
       <footer id="p1-contact" class="p1-footer">
         <div class="p1-footer-top">
           <div>
-            <div class="p1-footer-brand-name">SPORT LIFE</div>
+            <div class="p1-footer-brand-name">SPORT LIFE FITNESS CLUB</div>
             <div class="p1-footer-brand-desc">India's next-generation strength, hypertrophy & performance training platform.</div>
           </div>
           <div class="p1-footer-col">
